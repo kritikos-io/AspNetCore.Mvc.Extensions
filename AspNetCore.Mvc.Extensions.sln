@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30011.22
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Configuration", "Configuration", "{F37BE91C-3BD6-4FBB-AC8F-D55342E5C361}"
+	ProjectSection(SolutionItems) = preProject
+		.config\.editorconfig = .config\.editorconfig
+		.config\.gitignore = .config\.gitignore
+		.config\Directory.Build.props = .config\Directory.Build.props
+		.config\Directory.Build.targets = .config\Directory.Build.targets
+		.config\GitVersion.yml = .config\GitVersion.yml
+		.config\gulpfile.js = .config\gulpfile.js
+	EndProjectSection
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{955590B7-C8C1-4C47-8D17-842B2AE0178B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{52EEBB74-BB93-4D71-AC8E-F2810E9422DC}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AspNetCore.Mvc.Extensions", "src\AspNetCore.Mvc.Extensions\AspNetCore.Mvc.Extensions.csproj", "{2A6B3365-53D2-49A4-BCE8-F30A6D2B3344}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2A6B3365-53D2-49A4-BCE8-F30A6D2B3344}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2A6B3365-53D2-49A4-BCE8-F30A6D2B3344}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2A6B3365-53D2-49A4-BCE8-F30A6D2B3344}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2A6B3365-53D2-49A4-BCE8-F30A6D2B3344}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{2A6B3365-53D2-49A4-BCE8-F30A6D2B3344} = {955590B7-C8C1-4C47-8D17-842B2AE0178B}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0ECD1725-C441-4088-8AE0-6C0365C24579}
+	EndGlobalSection
+EndGlobal
