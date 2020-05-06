@@ -24,3 +24,12 @@ trigger:
       - azure-pipelines.yml
       - src/*
       - tests/*
+      - ci/*@Shared
+
+pool: windows-latest
+
+stages:
+  - stage: Test
+    jobs:
+      - job: TestWindows
+      - job: TestLinux
