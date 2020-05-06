@@ -9,7 +9,6 @@ resources:
       type: github
       endpoint: kritikos-io
       ref: master
-
 trigger:
   batch: true
   branches:
@@ -24,11 +23,10 @@ trigger:
       - azure-pipelines.yml
       - src/*
       - tests/*
-
 variables:
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
   DOTNET_CLI_TELEMETRY_OPTOUT: true
-
+  BuildConfiguration: 'Release'
 stages:
   - template: ci\stages\semver.yml@Shared
   - template: ci\stages\dotnet.yml@Shared
