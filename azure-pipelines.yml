@@ -1,0 +1,25 @@
+resources:
+  repositories:
+    - repository: self
+      checkoutOptions:
+        submodules: true
+        lfs: true
+    - repository: Shared
+      name: krittikos-io/.config
+      type: git
+      ref: master
+
+trigger:
+  batch: true
+  branches:
+    include:
+      - master
+      - develop
+      - feature/*
+      - bugfix/*
+      - release/*
+  paths:
+    include:
+      - azure-pipelines.yml
+      - src/*
+      - tests/*
