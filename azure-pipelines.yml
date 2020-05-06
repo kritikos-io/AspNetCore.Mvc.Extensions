@@ -26,7 +26,7 @@ trigger:
       - tests/*
       - ci/*@Shared
 
-pool: windows-latest
+pool: windows-2019
 
 stages:
   - stage: Test
