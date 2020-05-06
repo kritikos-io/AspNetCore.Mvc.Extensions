@@ -24,12 +24,11 @@ trigger:
       - azure-pipelines.yml
       - src/*
       - tests/*
-      - ci/*@Shared
-
-pool: windows-2019
 
 stages:
-  - stage: Test
+  - stage: SetUp
+    pool: ubuntu-latest
     jobs:
-      - job: TestWindows
-      - job: TestLinux
+      - job: Versioning
+        steps:
+        - template: ci\versioning.yml@Shared
