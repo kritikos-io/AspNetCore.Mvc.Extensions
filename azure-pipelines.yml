@@ -31,12 +31,9 @@ stages:
     jobs:
       - job: Versioning
         steps:
-        - template: ci\versioning.yml@Shared
+        - template: ci\templates\generic-02-versioning.yml@Shared
   - stage: Debug
     jobs:
       - job: test
         steps:
-          - task: Bash@3
-            inputs:
-              targetType: inline
-              script: 'env | sort'
+          - template: ci\templates\generic-01-debug.yml@Shared
