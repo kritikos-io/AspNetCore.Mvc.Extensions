@@ -5,7 +5,7 @@ resources:
         submodules: true
         lfs: true
     - repository: Shared
-      name: krittikos-io/.config
+      name: kritikos-io/.config
       type: git
       ref: master
 
