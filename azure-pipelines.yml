@@ -32,6 +32,11 @@ stages:
       - job: Versioning
         steps:
         - template: ci\templates\generic-02-versioning.yml@Shared
+  - stage: Pack
+    jobs:
+      - job: Pack
+        steps:
+          - template: ci\templates\dotnet-01-pack.yml@Shared
   - stage: Debug
     jobs:
       - job: test
