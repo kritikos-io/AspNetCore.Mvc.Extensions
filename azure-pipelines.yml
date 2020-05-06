@@ -29,5 +29,5 @@ variables:
   BuildConfiguration: 'Release'
 stages:
   - template: ci\stages\semver.yml@Shared
-  - template: ci\stages\dotnet.yml@Shared
+  # - template: ci\stages\dotnet.yml@Shared
   - template: ci\stages\debug.yml@Shared
