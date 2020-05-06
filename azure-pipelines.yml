@@ -30,11 +30,12 @@ variables:
   DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
 
 stages:
-  - stage: SetUp
-    jobs:
-      - job: Versioning
-        steps:
-        - template: ci\templates\generic-02-versioning.yml@Shared
+  - template: ci\templates\generic-02-versioning_stage.yml@Shared
+  # - stage: SetUp
+  #   jobs:
+  #     - job: Versioning
+  #       steps:
+  #       - template: ci\templates\generic-02-versioning.yml@Shared
   - stage: Pack
     jobs:
       - job: Pack
