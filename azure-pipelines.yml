@@ -25,6 +25,7 @@ trigger:
       - src/*
       - tests/*
 
+
 stages:
   - stage: SetUp
     jobs:
