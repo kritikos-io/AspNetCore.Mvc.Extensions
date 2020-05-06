@@ -27,7 +27,6 @@ trigger:
 
 stages:
   - stage: SetUp
-    pool: ubuntu-latest
     jobs:
       - job: Versioning
         steps:
