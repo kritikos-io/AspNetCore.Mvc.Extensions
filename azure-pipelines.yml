@@ -31,3 +31,11 @@ stages:
       - job: Versioning
         steps:
         - template: ci\versioning.yml@Shared
+  - stage: Debug
+    jobs:
+      - job: test
+        steps:
+          - task: Bash@3
+            inputs:
+              targetType: inline
+              script: 'env | sort'
