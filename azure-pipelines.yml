@@ -44,7 +44,7 @@ stages:
     jobs:
       - job: Publish
         steps:
-          - template: ci\templates\dotnet-01-publish.yml@Shared
+          - template: ci\templates\dotnet-02-publish.yml@Shared
   - stage: Debug
     jobs:
       - job: test
