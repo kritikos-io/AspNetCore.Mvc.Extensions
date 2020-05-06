@@ -10,6 +10,7 @@ resources:
       endpoint: kritikos-io
       ref: master
 
+
 trigger:
   batch: true
   branches:
@@ -25,6 +26,8 @@ trigger:
       - src/*
       - tests/*
 
+variables:
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
 
 stages:
   - stage: SetUp
@@ -37,6 +40,11 @@ stages:
       - job: Pack
         steps:
           - template: ci\templates\dotnet-01-pack.yml@Shared
+  - stage: Publish
+    jobs:
+      - job: Publish
+        steps:
+          - template: ci\templates\dotnet-01-publish.yml@Shared
   - stage: Debug
     jobs:
       - job: test
