@@ -6,7 +6,7 @@ resources:
         lfs: true
     - repository: Shared
       name: kritikos-io/.config
-      type: git
+      type: github
       ref: master
 
 trigger:
